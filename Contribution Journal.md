@@ -1,6 +1,9 @@
 Elda's Entry
 
-
-
 For this assignment, I created our team’s Github repository and uploaded the original diabetes risk CVS file to a data folder so everyone could access it using the same link. I also created a one-page document with the original dataset URL and explaining the dataset and our project goals. Next, I created a Google Colab notebook, imported the libraries – pandas, NumPY, Matplotlib, scikit-learn, imbalanced-learn – and loaded the CVS with pandas. I review the dataset’s shape, column types, and missing values with df.info(). After this, I split the data into 70% training and 30% testing. I created a histogram chart that shows how the data is spread out before pre-processing. Finally, I processed the missing values by using the mode for the smoking status and income bracket and adding an “Unknown” category for alcohol consumption. These replacement values should be calculated only from the training set to prevent data leakage.
+
+
+Xinyu's Entry:
+
+This document includes my progress on the preprocessing steps for the Diabetes Risk Prediction. Specifically, I completed encoding for the categorical features, including binary and ordinal features that were numerically encoded, and categorical features without a natural order that required one-hot encoding. I verified that after encoding, no features remained non-numeric and that the training and testing sets had the same number and types of features.  I continued to normalize the data by using the PowerTransformer to attempt to make the fastest blood sugar reading and HbA1c level more normal. I calculated the skewness of these two columns after the normalization and added before/after visualizations.  For scaling, I chose to utilize the Min-Max scaling method on the selected features that are numerical in nature. The scaled training data was checked to confirm that all values fell within the 0 to 1 range. Graphs before scaling and after scaling were created to compare and highlight the results of scaling the data. The scaling was applied by fitting the respective transformers on the training data and then applying them to the testing data in order to avoid any data leakage.
 
