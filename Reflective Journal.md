@@ -1,10 +1,6 @@
 Elda's Entry
 
-This part of the assignment helped me realize that setting up a project the right way is just as important as writing the code.  
-
-While exploring the data, I found out that Colab cell only shows the output from the last line, so I used display() to check the dataset’s shape.  
-
-Splitting the data helped me understand data leakage because the test set should include new patients that the model has not seen before. 
+While working on this part of the assignment, I learned that setting up the project correctly is just as important as writing the code. Uploading the dataset to our GitHub repository made it easier for everyone to use the same file without changing it or uploading it again. I also found out that a Colab cell only shows the output from the last line, so I used display() to view the dataset’s shape, column types, and missing values. Splitting the data into 70% training and 30% testing helped me understand data leakage because the test set should represent new patients the model has not seen before. Using stratification also kept a similar number of Low-, Moderate-, and High-risk patients in both sets. During data cleaning, I learned that rules such as removing an ID column or impossible blood pressure values can be used on both sets because they do not use information from the test data. The EDA charts helped me understand histograms and skew values. They showed that fasting blood sugar and HbA1c are right-skewed and may need normalization later. I also learned that the best way to fill missing values depends on how much data is missing. I used the mode when only a few values were missing and an “Unknown” category when 25% were missing. Comparing the same rows before and after cleaning helped me confirm that the changes worked.
 
 
 
@@ -23,3 +19,4 @@ One of the main things I learned from this assignment is how to avoid data leaka
 For the final project, I intend to train and compare different classification models on the same dataset and measure their ability to predict the correct diabetes risk level. Most importantly, I want to see how different preprocessing steps affect the results of the models. The purpose of data preprocessing is to create the best possible input for a model, and there are many ways to reach this goal.
 
 Overall, the project reminded me of an important point about data preparation: it is not just a part of the workflow before training the model. Every step of the preparation influences how the data will be processed by the model. Therefore, it is important to understand the data first and then choose the appropriate method for preparation.
+
