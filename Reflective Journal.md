@@ -20,3 +20,12 @@ For the final project, I intend to train and compare different classification mo
 
 Overall, the project reminded me of an important point about data preparation: it is not just a part of the workflow before training the model. Every step of the preparation influences how the data will be processed by the model. Therefore, it is important to understand the data first and then choose the appropriate method for preparation.
 
+
+Michelle's Entry:
+
+Last semester in data science class I learned a little about preprocessing and missing values. This project taught me much more.
+I learned that preparing data is more than fixing missing values. Every step changes what the model will see. A new feature has to be checked against the data to see if it is useful or not. 
+I learned why class balancing is needed. If one group is much bigger than the others, a model can look good just by guessing that group. I also learned that balancing is only done on the training data. The test data has to stay realistic so our final results are honest.
+I also learned that the order of the steps matters. Cells have to run in the right order or else you will definitely run into some errors, which I did experience and anything that was learned from the data should come from the training set only.
+For the final I believe we should train a few models to predict Low, Moderate or High risk. I think balancing will help the models find High-risk patients. I will test this by comparing the results with and without it and then look out for how well each model finds the High-risk patients and not just the overall accuracy. 
+
